@@ -1,0 +1,47 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^29.2.0",
+    "@ckeditor/ckeditor5-vue": "^2.0.1",
+    "@tiptap/extension-bold": "^2.0.0-beta.15",
+    "@tiptap/extension-color": "^2.0.0-beta.3",
+    "@tiptap/extension-floating-menu": "^2.0.0-beta.27",
+    "@tiptap/extension-image": "^2.0.0-beta.15",
+    "@tiptap/extension-italic": "^2.0.0-beta.15",
+    "@tiptap/extension-link": "^2.0.0-beta.20",
+    "@tiptap/extension-strike": "^2.0.0-beta.17",
+    "@tiptap/extension-text-align": "^2.0.0-beta.23",
+    "@tiptap/extension-text-style": "^2.0.0-beta.17",
+    "@tiptap/starter-kit": "^2.0.0-beta.104",
+    "@tiptap/vue-3": "^2.0.0-beta.58",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "json-server": "^0.16.3",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^0.5.1",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-alignment": "^29.2.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

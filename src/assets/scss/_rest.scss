@@ -1,0 +1,19 @@
+// @import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+// @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+// @import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
+body{
+    background-color: $black;
+}
+body,div,a,ul,li,img,table,tr,td,header,footer,h1,h2,h3,h4,input,select,textarea{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: $gray;
+	font-family: 'Noto Sans TC', serif;
+	list-style: none;
+	border: none;
+	border-collapse: collapse;
+	outline: none;
+	box-sizing: border-box;
+}

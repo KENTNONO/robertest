@@ -1,0 +1,107 @@
+@charset "UTF-8";
+$white:#fff;
+$black:#000;
+$gray:#303030;
+$lightGray:#505050;
+$blue:#00a1d0;
+$brown:#c39e49;
+$darkBlue:#546a81;
+$green:#879300;
+$borderColor:#dddddd;
+$innerTitle:28px;
+$bInnerTxt:18px;
+$sInnerTxt:16px;
+$smallTxt:14px;
+$full:100%;
+$width:1200px;
+$padWidth:767px;
+
+@mixin btn($myColor) {
+	width: 108px;
+	height: 40px;
+	background-color: $myColor;
+	line-height: 40px;
+	text-align: center;
+	font-size: 23px;
+	color: $white;
+	display: block;
+	border-radius: 20px;
+	border:1px solid $myColor;
+	letter-spacing: 10px;
+	text-indent: 10px;
+	transition:0.5s all;
+	&:hover{
+		background-color: $white;
+		color: $myColor;
+	}
+}
+@mixin formBtn($width,$myColor) {
+	width: $width;
+	height: 62px;
+	background-color: $myColor;
+	line-height: 62px;
+	text-align: center;
+	font-size: 23px;
+	color: $white;
+	display: inline-block;
+	border-radius: 10px;
+	border:1px solid $myColor;
+	transition:0.5s all;
+	&:hover{
+		background-color: $white;
+		color: $myColor;
+	}
+}
+@mixin input($myWidth) {
+	width: $myWidth;
+	box-sizing:border-box;
+	padding: 0 10px;
+	border:1px solid #d5d5d5;
+	font-size: $bInnerTxt;
+	height: 59px;
+	border-radius: 15px;
+}
+
+
+@mixin breakpoint($point) {
+	@if $point == sPC {
+	    @media only screen and (max-width: 1400px) {
+	      @content;
+	    }
+	}
+	@else if $point == nb {
+	    @media only screen and (max-width: 1199px) {
+	      @content;
+	    }
+	}
+	@else if $point == nbsm {
+	    @media only screen and (max-width: 1023px) {
+	      @content;
+	    }
+	}
+	@else if $point == ipad {
+	    @media only screen and (max-width: 991px) {
+	      @content;
+	    }
+	}
+	@else if $point == m {
+	    @media only screen and (max-width: 767px) {
+	      @content;
+	    }
+	}
+	@else if $point == m1 {
+	    @media only screen and (max-width: 599px) {
+	      @content;
+	    }
+	}
+    @else if $point == m2 {
+        @media only screen and (max-width: 450px) {
+          @content;
+        }
+	}
+	@else if $point == m3 {
+        @media only screen and (max-width: 380px) {
+          @content;
+        }
+    }
+}
